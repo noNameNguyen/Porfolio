@@ -1,0 +1,848 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* border: 5px solid black; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e2eff1;
+    z-index: 10;
+}
+
+
+header h1 {
+    text-align: center;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60x;
+    transition: color 0.5s;
+    margin-top: 40px;
+}
+#Dlogo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.5s, color 0.5s;
+    margin-left: 80px;
+}
+
+#Dlogo:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+header h1:hover {
+    color: rgb(73, 73, 193);
+}
+
+#navigate {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+
+span {
+    color: rgb(181, 67, 67);
+}
+
+.Introduction h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 90px;
+    color: rgb(36, 36, 128);
+    
+}
+
+
+
+.bar {
+    height: 100px;
+    width: 200px;
+    padding-top: 30px;
+    margin: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    transition: box-shadow 0.5s;
+    border-radius: 10px;
+}
+
+.bar:hover {
+    opacity: 0.8;
+    box-shadow: 10px 5px 5px #837d7d;
+}
+
+#myImage {
+    border: 5px solid #b6d5e1;
+    border-radius: 20px;
+    height: 700px;
+    width: auto;
+    z-index: 2;
+    position: relative;
+    top: 650px;
+    right: 100px;
+    /* transition: box-shadow 0.5s; */
+}
+
+
+#star {
+    position: relative;
+    bottom: 500px;
+    z-index: 0;
+    transition: transform 0.5s;
+}
+
+#icon-minnesota{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    bottom: 1000px;
+    z-index: 0;
+    transition: transform 0.5s;
+}
+
+#picture:hover #icon-minnesota {
+    transform: translate(-400px, -400px);
+
+}
+
+
+
+
+#aboutButton {
+    height: 100px;
+    width: 300px;
+    border: 5px solid rgb(73, 73, 193);
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: background-color 0.5s, color 0.5s;
+    color: rgb(73, 73, 193);
+}
+
+#aboutButton:hover {
+    background-color: rgb(73, 73, 193);
+    color: white;
+}
+
+.socialMedia {
+    margin-top: 30px;
+}
+#linkedin {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#instagram {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#facebook {
+    height: 50px;
+    width: auto;
+}
+
+#aboutMe {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+.Introduction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    height: 1500px;
+    background-color: rgb(248, 248, 247);
+    z-index: -10;
+}
+#aboutSection {
+    height: 1200px;
+    background-color: #2b2e4a;
+}
+#headAboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top: 200px;
+}
+
+#humanIcon {
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+#me {
+    margin-left: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 70px;
+    transition: box-shadow 0.5s;
+}
+
+#me:hover {
+    box-shadow: 10px 10px 0px rgb(166, 161, 161);
+}
+#me span {
+    color:rgb(215, 139, 72);
+}
+
+.caption {
+    margin-top: 100px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    transition: background-color 0.5s, color 0.5s;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    width: 1200px;
+    position: relative;
+    z-index: 2;
+}
+.P {
+    position: relative;
+    left: 30px;
+}
+.caption:hover {
+    background-color: white;
+    color: rgb(33, 33, 93);
+}
+
+.caption:hover #resume {
+    background-color: rgb(33, 33, 93);
+    color: white;
+}
+
+.caption:hover #resume a {
+    color: white;
+}
+#describe {
+    height: 600px;
+    width: 1300px;
+}
+#describe:hover #back {
+    transform: translate(30px, 30px);
+    background-color: #c9d6df;
+}
+#back {
+    height: 500px;
+    width: 1200px;
+    background-color: #2b2e4a;
+    position: relative;
+    bottom: 500px;
+    z-index: 0;
+    border-radius: 30px;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#secondImage {
+    height: 500px;
+    width: auto;
+    border-radius: 30px;
+    margin: 100px;
+    margin-top: 150px;
+    transition: box-shadow 0.5s;
+}
+
+#secondImage:hover {
+    box-shadow: 20px 20px 0px rgb(139, 145, 148);
+}
+
+.mainAbout {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Pronounce {
+    margin-top: 10px;
+}
+
+#Description {
+    margin-top: 10px;
+}
+
+#Email {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#Address {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.specific {
+    font-weight: 500;
+    color: rgb(215, 139, 72);
+}
+
+#resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(33, 33, 93);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#resume:hover {
+    background-color: #f35c6e;
+    color: white;
+}
+
+#resume-link {
+    transition: color 0.5s;
+}
+#resume:hover a {
+    color: white;
+}
+
+#Downdloadbutton {
+    height: 40px;
+    margin-left: 10px;
+    width: auto;
+}
+
+
+#picture {
+    display: flex;
+    flex-direction: column;
+}
+
+#picture:hover #behindPortrait {
+    transform: translate(25px, 30px);
+}
+
+#picture:hover #star {
+    transform: translate(-500px, 300px);
+    
+}
+#behindPortrait {
+    height: 700px;
+    width: 500px;
+    background-color: #65799b;
+    z-index: 1;
+    position: relative;
+    /* right: 450px;
+    top: 40px; */
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+
+.skills {
+    height: 2000px;
+    background-color: #364968;
+}
+
+#head-skills {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    position: relative;
+    top: 200px;
+    color: white;
+
+}
+
+#head-skills h1 {
+    margin-top: 70px;
+}
+
+#icon-skills {
+    height: 110px;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#front {
+    z-index: 3;
+    position: relative;
+}
+#after {
+    position: relative;
+    bottom: 150px;
+    color: #567582;
+    z-index: 0;
+    left: 5px;
+    transition: transform 0.5s;
+}
+
+#head-text:hover #after {
+    transform: translate(10px, 10px);
+}
+
+#main-skills {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    border-radius: 20px;
+    transition: box-shadow 0.5s;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.item #java{
+    color: rgb(196, 64, 64);
+    text-align: center;
+}
+
+.item #python {
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+
+#py {
+    background-color: #567582;
+
+}
+
+
+
+.item:hover {
+    box-shadow: 25px 25px 0px #b6d5e1;
+}
+
+
+
+.icon {
+    height: 200px;
+    width: auto;
+    
+}
+
+#p-main-skills {
+    background-color: #65799b;
+    width: 1200px;
+    height: 1100px;
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    top: 200px;
+}
+
+#pp-main-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shadow-border {
+    width: 1200px;
+    height: 1100px;
+    background-color: none;
+    border-radius: 30px;
+    position: relative;
+    bottom: 800px;
+    left: 100px;
+    border: 30px solid #c7eeff;
+    transition: transform 0.5s;
+}
+
+#pp-main-skills:hover #shadow-border {
+    transform: translate(50px, 50px);
+}
+#twin-cities {
+    height: 300px;
+    width: auto;
+    margin-left: 1200px;
+}
+
+#cse {
+    height: 300px;
+    width: auto;
+    margin-left: 1200px;
+}
+
+#Education {
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    background-color: #9d2b38;
+    height: 2500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: black;
+}
+#head-education {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#head-education h1 {
+    font-size: 70px;
+}
+#icon-education {
+    height: 110px;
+    width: auto;
+    margin-right: 30px;
+}
+
+#head-education h1 {
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+#main-education {
+    width: 1500px;
+    height: 1500px;
+    background-color: #f7dda4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+#school {
+    height: auto;
+    width: 1000px;
+    border-radius: 30px;
+}
+
+#school-name {
+    width: 300px;
+    height: auto;
+    margin: 50px;
+}
+
+#p-main-education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    bottom: 200px;
+}
+
+.school-text {
+    margin-top: 150px;
+    color: #9d2b38;
+}
+
+.school-text h2 {
+    font-weight: 200;
+}
+
+.school-text span {
+    font-weight: 700;
+}
+
+.school-description {
+    margin: 20px;
+}
+
+#trans-download {
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 120px;
+}
+
+
+#trans {
+    margin-top: 20px;
+    border: none;
+    height: 100px;
+    width: 400px;
+    color: white;
+    background-color: #9d2b38;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+#arrow-circle {
+    height: 45px;
+    width: auto;
+    margin-left: 20px;
+    transition: transform 0.5s;
+}
+
+#trans:hover {
+    background-color: white;
+    border: 1px solid #9d2b38;
+    
+}
+
+#trans:hover #arrow-circle {
+    transform: translate(10px);
+}
+
+
+#p-main-education::after {
+    content: '';
+    height: 1600px;
+    width: 1600px;
+    background-color: none;
+    position: absolute;
+    z-index: -1;
+    border: 30px solid #f7dda4;
+    transition: height 0.5s, width 0.5s;   
+}
+
+#p-main-education:hover::after {
+    height: 1700px;
+    width: 1700px;
+}
+
+#trans a h1 {
+    font-size: 30px;
+    color: white;
+    transition: color 0.5s;
+}
+
+#trans:hover a h1 {
+    color: #9d2b38;
+}
+
+footer {
+    height: 2000px;
+    background-color: #e2eff1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+#head-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    
+}
+
+#head-contact h1 {
+    margin-left: 40px;
+    color: #555273;
+}
+
+#head-contact #icon-contact {
+    height: 100px;
+    width: auto;
+    
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.in {
+    height: 100px;
+    width: 700px;
+    border-radius: 30px;
+}
+
+form {
+    height: 1300px;
+    width: 1200px;
+    background-color: #b6d5e1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.in {
+    margin: 50px;
+    background-color: #e2eff1;
+    height: 100px;
+    width: 800px;
+    font-size: 50px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 20px 25px 0px #555273;
+    transition: box-shadow 0.4s;
+}
+
+.in:hover {
+    box-shadow: 30px 35px 0px #555273;
+}
+
+form #message {
+    height: 400px;
+}
+#name {
+    margin-top: 100px;
+}
+
+
+#submit {
+    margin-top: 50px;
+    height: 100px;
+    width: 300px;
+    background-color: rgb(85, 82, 115);
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #e2eff1;
+    transition: opacity 0.5s;
+}
+
+#submit:hover {
+    opacity: 0.5;
+}
+
+
+#head-form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head-form h1 {
+    margin-left: 40px;
+    color: #555273;
+}
+
+#icon-customer {height: 100px;
+    width: auto;
+}
+
+#aboutButton a > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(73, 73, 193);
+}
+
+#aboutButton:hover h2 {
+    color: white;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-infor {
+    height: 1000px;
+    width: 1200px;
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+#contact-infor h1 {
+    color: rgb(85,82,117);
+    font-size: 100px;
+}
+
+.contact-list {
+    display: flex;
+    margin: 40px;
+}
+
+
+
+.contact-list #small-icon {
+    height: 70px;
+}
+
+.contact-list h2 {
+    font-weight: 300;
+    margin-left: 40px;
+    color: rgb(85,82,117);
+}
+
+#bottom-icon {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+#bottom-icon .icon-list {
+    height: 80px;
+}
+
+
+
+
+
+
